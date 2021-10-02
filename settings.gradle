@@ -1,1 +1,3 @@
 rootProject.name = 'dvdrental'
+rootProject.children.each { it.name = "dvdrental-${it.name}" }
+include 'rest', 'web'
